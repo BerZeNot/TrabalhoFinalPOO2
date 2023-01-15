@@ -10,7 +10,6 @@ public abstract class AlgoritmoIA {
 	private Random gerador;
 	private EnumTipoTarefa tipoTarefa;
 	
-	
 	protected AlgoritmoIA(EnumTipoTarefa tipoTarefa, Fitter fitter) {
 		this.gerador = new Random();
 		this.tipoTarefa = tipoTarefa;

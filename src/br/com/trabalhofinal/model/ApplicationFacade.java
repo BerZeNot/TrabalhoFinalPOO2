@@ -4,7 +4,10 @@ import br.com.trabalhofinal.model.Enum.EnumTipoTarefa;
 
 public class ApplicationFacade {
 	private AlgoritmoIA algoritmo;
-	
+
+	public ApplicationFacade(AlgoritmoIA algoritmoIA){
+		this.algoritmo = algoritmoIA;
+	}
 	public void fit() {
 		carregaDados();
 		normalizaDados();
@@ -28,7 +31,6 @@ public class ApplicationFacade {
 	public void imprimeModelo() {
 		algoritmo.imprimeModelo();
 	}
-	
 	
 	private void carregaDados() {
 		System.out.println("Carregando dados...");

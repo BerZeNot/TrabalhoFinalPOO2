@@ -1,10 +1,11 @@
 package br.com.trabalhofinal.model;
 
-import br.com.trabalhofinal.model.Enum.EnumAvaliacao;
+import java.util.HashMap;
+
 import br.com.trabalhofinal.model.Enum.EnumModo;
 
 public interface Fitter {
 	
-	public void fit(EnumAvaliacao avaliacao);
+	public void fit(HashMap<String, String> params);
 	public EnumModo getModo();
 }

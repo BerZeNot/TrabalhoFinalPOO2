@@ -35,4 +35,10 @@ public class FitterArvoreDeDecisao implements Fitter {
 		System.out.println("-- Medida de Informação: " + params.get("medidaDeInformacao"));
 	}
 
+
+	@Override
+	public void setModo(EnumModo modo) {
+		this.modo = modo;
+	}
+
 }

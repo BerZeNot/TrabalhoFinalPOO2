@@ -9,8 +9,22 @@ public class FitterRedeNeuralArtificial implements Fitter {
 	EnumModo modo;
 	boolean primeiraChamada;
 
+	
+	
+	public FitterRedeNeuralArtificial() {
+		super();
+		this.modo = EnumModo.UNFITTED;
+		this.primeiraChamada = true;
+	}
+
 	@Override
 	public void fit(HashMap<String, String> params) {
+		if(primeiraChamada) {
+			System.out.println("Primeira chamada do fit(): passando de UNFITTED para FITTED");
+			this.modo = EnumModo.FITTED;
+			primeiraChamada = false;
+		}
+		
 		System.out.println("Ajustando modelo da árvore com as configurações: ");
 		System.out.println("-- Número de Camadas: " + params.get("numeroDeCamadas"));
 		System.out.println("-- Número de Neuronios por Camadas: " + params.get("neuroniosPorCamada"));

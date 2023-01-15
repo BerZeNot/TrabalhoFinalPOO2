@@ -9,7 +9,13 @@ public class FitterArvoreDeDecisao implements Fitter {
 	EnumModo modo;
 	boolean primeiraChamada;
 	
-	
+	public FitterArvoreDeDecisao() {
+		super();
+		this.modo = EnumModo.UNFITTED;
+		this.primeiraChamada = true;
+	}
+
+
 	@Override
 	public EnumModo getModo() {
 		return this.modo;
@@ -18,7 +24,13 @@ public class FitterArvoreDeDecisao implements Fitter {
 
 	@Override
 	public void fit(HashMap<String, String> params) {
-		System.out.println("Ajustando modelo da árvod com as configurações: ");
+		if(primeiraChamada) {
+			System.out.println("Primeira chamada do fit(): passando de UNFITTED para FITTED");
+			this.modo = EnumModo.FITTED;
+			primeiraChamada = false;
+		}
+		
+		System.out.println("Ajustando modelo da árvore com as configurações: ");
 		System.out.println("-- Número de Árvores: " + params.get("numeroDeArvores")); 
 		System.out.println("-- Medida de Informação: " + params.get("medidaDeInformacao"));
 	}

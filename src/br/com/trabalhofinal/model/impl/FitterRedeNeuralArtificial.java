@@ -36,7 +36,11 @@ public class FitterRedeNeuralArtificial implements Fitter {
 	public EnumModo getModo() {
 		return this.modo;
 	}
-
+	
+	@Override
+	public void setModo(EnumModo modo) {
+		this.modo = modo;
+	}
 
 
 }

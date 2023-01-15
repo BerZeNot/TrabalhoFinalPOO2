@@ -33,10 +33,9 @@ public class FitterKvizinhos implements Fitter{
 		return this.modo;
 	}
 
+	@Override
+	public void setModo(EnumModo modo) {
+		this.modo = modo;
+	}
 	
-	
-	
-	
-	
-
 }

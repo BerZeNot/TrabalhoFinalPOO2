@@ -33,7 +33,6 @@ public abstract class AlgoritmoIA {
 		else {
 			Double value = gerador.nextDouble();
 			return value.toString();
-					
 		}
 	}
 	

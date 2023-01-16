@@ -54,6 +54,7 @@ public class AlgoritmosView{
                 break;
             }
         }
+        sc.close();
     }
 
     public ApplicationFacade iniciaArvoreDecisao(){
@@ -77,7 +78,7 @@ public class AlgoritmosView{
         AlgoritmoIA algoritmoIA = new ArvoreDeDecisao(EnumTipoTarefa.values()[tipoTarefa-1], numeroArvores, medidaInformacao);
         ApplicationFacade facade = new ApplicationFacade(algoritmoIA);
         limparConsole();
-        
+        sc.close();
         return facade;
     }
     
@@ -115,7 +116,7 @@ public class AlgoritmosView{
 
         ApplicationFacade facade = new ApplicationFacade(algoritmoIA);
         limparConsole();
-        
+        sc.close();
         return facade;
     }
 
@@ -159,7 +160,7 @@ public class AlgoritmosView{
 
         ApplicationFacade facade = new ApplicationFacade(algoritmoIA);
         limparConsole();
-        
+        sc.close();
         return facade;
     }
 
@@ -190,6 +191,7 @@ public class AlgoritmosView{
                 
             }
         }
+        sc.close();
     }
 
     public static void limparConsole() {

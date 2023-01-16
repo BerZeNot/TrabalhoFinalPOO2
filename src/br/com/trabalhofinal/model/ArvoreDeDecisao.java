@@ -10,7 +10,7 @@ public class ArvoreDeDecisao extends AlgoritmoIA {
 	private Integer numeroDeArvores;
 	private Double medidaDeInformacao;
 	
-	private FitterArvoreDeDecisao fitter;
+	private Fitter fitter;
 	public ArvoreDeDecisao(EnumTipoTarefa tipoTarefa, int numeroDeArvores, double medidaDeInformacao) {
 		super(tipoTarefa, new FitterArvoreDeDecisao());
 		this.numeroDeArvores = numeroDeArvores;

@@ -33,8 +33,8 @@ public class ApplicationFacade {
 				algoritmo.getFitter().setModo(EnumModo.FITTED);
 			break;
 		}
-		
 	}
+	
 	public void predict() {
 		System.out.println("Recebendo novo dado..");
 		System.out.println("Carredando o modelo de aprendizado ajustado anteriormente...");

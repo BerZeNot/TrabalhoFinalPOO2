@@ -21,6 +21,7 @@ public class RedeNeuralArtificial extends AlgoritmoIA {
 		this.neuroniosPorCamada = neuroniosPorCamada;
 		this.funcaoDeAtivacao = funcaoDeAtivacao;
 		this.taxaDeAprendizado = taxaDeAprendizado;
+		this.fitter = new FitterRedeNeuralArtificial();
 	}
 
 	@Override

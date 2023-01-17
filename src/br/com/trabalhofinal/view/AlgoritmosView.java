@@ -27,24 +27,24 @@ public class AlgoritmosView{
 
         switch (opcaoAlgoritmo) {
             case 1:{
-                ApplicationFacade facade = iniciaArvoreDecisao();
-                acao(facade);
+                ApplicationFacade facade = iniciaArvoreDecisao(sc);
+                acao(facade, sc);
                 limparConsole();
                 menu(sc);
                 break;
             }
             
             case 2:{
-                ApplicationFacade facade = iniciaKVizinhos();
-                acao(facade);
+                ApplicationFacade facade = iniciaKVizinhos(sc);
+                acao(facade, sc);
                 limparConsole();
                 menu(sc);
                 break;
             } 
 
             case 3:{
-                ApplicationFacade facade = iniciaRedeNeuralArtificial();
-                acao(facade);
+                ApplicationFacade facade = iniciaRedeNeuralArtificial(sc);
+                acao(facade, sc);
                 limparConsole();
                 menu(sc);
                 break;
@@ -56,8 +56,7 @@ public class AlgoritmosView{
         
     }
 
-    public ApplicationFacade iniciaArvoreDecisao(){
-        Scanner sc = new Scanner(System.in);
+    public ApplicationFacade iniciaArvoreDecisao(Scanner sc){
         Integer tipoTarefa = 0;
         limparConsole();
         do {
@@ -81,8 +80,7 @@ public class AlgoritmosView{
         return facade;
     }
     
-    public ApplicationFacade iniciaKVizinhos(){
-        Scanner sc = new Scanner(System.in);
+    public ApplicationFacade iniciaKVizinhos(Scanner sc){
         Integer tipoTarefa = 0;
         limparConsole();
         do {
@@ -119,8 +117,7 @@ public class AlgoritmosView{
         return facade;
     }
 
-    public ApplicationFacade iniciaRedeNeuralArtificial(){
-        Scanner sc = new Scanner(System.in);
+    public ApplicationFacade iniciaRedeNeuralArtificial(Scanner sc){
         Integer tipoTarefa = 0;
         limparConsole();
         do {
@@ -163,9 +160,8 @@ public class AlgoritmosView{
         return facade;
     }
 
-    public void acao(ApplicationFacade facade){
+    public void acao(ApplicationFacade facade, Scanner sc){
         Integer acao = 1;
-        Scanner sc = new Scanner(System.in);
         while(acao != 0){
             System.out.println("\nEscolha uma ação: ");
             System.out.println("1) Fit");

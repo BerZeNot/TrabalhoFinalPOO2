@@ -30,7 +30,7 @@ public class FitterArvoreDeDecisao implements Fitter {
 			primeiraChamada = false;
 		}
 		
-		System.out.println("Ajustando modelo da árvore com as configurações: ");
+		System.out.println("Ajustando modelo com as configurações: ");
 		System.out.println("-- Número de Árvores: " + params.get("numeroDeArvores")); 
 		System.out.println("-- Medida de Informação: " + params.get("medidaDeInformacao"));
 	}

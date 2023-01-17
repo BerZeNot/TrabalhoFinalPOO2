@@ -25,7 +25,7 @@ public class FitterRedeNeuralArtificial implements Fitter {
 			primeiraChamada = false;
 		}
 		
-		System.out.println("Ajustando modelo da árvore com as configurações: ");
+		System.out.println("Ajustando modelo com as configurações: ");
 		System.out.println("-- Número de Camadas: " + params.get("numeroDeCamadas"));
 		System.out.println("-- Número de Neuronios por Camadas: " + params.get("neuroniosPorCamada"));
 		System.out.println("-- Função de Ativação: " + params.get("funcaoDeAtivacao"));

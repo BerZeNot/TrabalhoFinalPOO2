@@ -23,9 +23,9 @@ public class FitterKvizinhos implements Fitter{
 			primeiraChamada = false;
 		}
 		
-		System.out.println("Ajustando modelo da árvore com as configurações: ");
-		System.out.println("-- Número de Árvores: " + params.get("numeroDeArvores")); 
-		System.out.println("-- Medida de Informação: " + params.get("medidaDeInformacao"));
+		System.out.println("Ajustando modelo com as configurações: ");
+		System.out.println("-- Número de Vizinhos: " + params.get("numeroDeVizinhos")); 
+		System.out.println("-- Medida de Proximidade: " + params.get("medidaDeProximidade"));
 	}
 
 	@Override

@@ -17,13 +17,12 @@ public class AlgoritmosView{
         
     }
 
-    public void menu(){
+    public void menu(Scanner sc){
         int opcaoAlgoritmo;
         System.out.println("\nEscolha um Algoritmo: ");
         System.out.println("1) Arvore de decisão");
         System.out.println("2) KVizinhos");
         System.out.println("3) Rede Neural Artificial");
-        Scanner sc = new Scanner(System.in);
         opcaoAlgoritmo = sc.nextInt();
 
         switch (opcaoAlgoritmo) {
@@ -31,7 +30,7 @@ public class AlgoritmosView{
                 ApplicationFacade facade = iniciaArvoreDecisao();
                 acao(facade);
                 limparConsole();
-                menu();
+                menu(sc);
                 break;
             }
             
@@ -39,7 +38,7 @@ public class AlgoritmosView{
                 ApplicationFacade facade = iniciaKVizinhos();
                 acao(facade);
                 limparConsole();
-                menu();
+                menu(sc);
                 break;
             } 
 
@@ -47,14 +46,14 @@ public class AlgoritmosView{
                 ApplicationFacade facade = iniciaRedeNeuralArtificial();
                 acao(facade);
                 limparConsole();
-                menu();
+                menu(sc);
                 break;
             }
             case 0:{
                 break;
             }
         }
-        sc.close();
+        
     }
 
     public ApplicationFacade iniciaArvoreDecisao(){
@@ -78,7 +77,7 @@ public class AlgoritmosView{
         AlgoritmoIA algoritmoIA = new ArvoreDeDecisao(EnumTipoTarefa.values()[tipoTarefa-1], numeroArvores, medidaInformacao);
         ApplicationFacade facade = new ApplicationFacade(algoritmoIA);
         limparConsole();
-        sc.close();
+        
         return facade;
     }
     
@@ -116,7 +115,7 @@ public class AlgoritmosView{
 
         ApplicationFacade facade = new ApplicationFacade(algoritmoIA);
         limparConsole();
-        sc.close();
+        
         return facade;
     }
 
@@ -160,7 +159,7 @@ public class AlgoritmosView{
 
         ApplicationFacade facade = new ApplicationFacade(algoritmoIA);
         limparConsole();
-        sc.close();
+        
         return facade;
     }
 
@@ -191,7 +190,7 @@ public class AlgoritmosView{
                 
             }
         }
-        sc.close();
+        
     }
 
     public static void limparConsole() {

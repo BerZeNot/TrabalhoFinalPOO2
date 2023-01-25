@@ -1,0 +1,16 @@
+./src/br/com/trabalhofinal/Main.java
+./src/br/com/trabalhofinal/model/AlgoritmoIA.java
+./src/br/com/trabalhofinal/model/ApplicationFacade.java
+./src/br/com/trabalhofinal/model/ArvoreDeDecisao.java
+./src/br/com/trabalhofinal/model/Enum/EnumAvaliacao.java
+./src/br/com/trabalhofinal/model/Enum/EnumFuncaoDeAtivacao.java
+./src/br/com/trabalhofinal/model/Enum/EnumMedidaDeProximidade.java
+./src/br/com/trabalhofinal/model/Enum/EnumModo.java
+./src/br/com/trabalhofinal/model/Enum/EnumTipoTarefa.java
+./src/br/com/trabalhofinal/model/Fitter.java
+./src/br/com/trabalhofinal/model/impl/FitterArvoreDeDecisao.java
+./src/br/com/trabalhofinal/model/impl/FitterKvizinhos.java
+./src/br/com/trabalhofinal/model/impl/FitterRedeNeuralArtificial.java
+./src/br/com/trabalhofinal/model/KVizinhos.java
+./src/br/com/trabalhofinal/model/RedeNeuralArtificial.java
+./src/br/com/trabalhofinal/view/AlgoritmosView.java
